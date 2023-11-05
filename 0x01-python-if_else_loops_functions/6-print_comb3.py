@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-# Author - Tolulope Fakunle
+#Auther: Mahmud labib
 
-for digit1 in range(0, 10):
-    for digit2 in range(digit1 + 1, 10):
-        if digit1 == 8 and digit2 == 9:
-            print("{}{}".format(digit1, digit2))
+for i in range(0, 10):
+    for j in range(i, 10):
+        if i == j:
+            continue
+        if i == 8 and j == 9:
+            print("{}{}".format(i, j))
         else:
-            print("{}{}".format(digit1, digit2), end=", ")
+            print("{}{}".format(i, j), end=', ')
