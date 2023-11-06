@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Auther: Mahmud labib
+# Auther - Mahmud labib
 
 for i in range(0, 10):
     for j in range(i, 10):
