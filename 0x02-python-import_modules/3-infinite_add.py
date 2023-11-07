@@ -1,10 +1,13 @@
 #!/usr/bin/python3
-
 if __name__ == "__main__":
-    """Print the addition of all arguments."""
-    import sys
-
-    total = 0
-    for i in range(len(sys.argv) - 1):
-        total += int(sys.argv[i + 1])
-    print("{}".format(total))
+    from sys import argv
+# argv[] = [1, 2, 3, 4]
+    ln = len(argv) - 1
+    sum = 0
+    if ln == 0:
+        print("{}".format(0))
+    elif ln > 0:
+        for index, value in enumerate(argv):
+            if index != 0:
+                sum += int(value)
+        print("{}".format(sum))
